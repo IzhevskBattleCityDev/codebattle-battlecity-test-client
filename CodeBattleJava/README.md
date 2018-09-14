@@ -1,6 +1,6 @@
 ## Prerequisites:
 
-Run
+Run inside CodeBattleJava
 ```
 gradlew build
 ```
