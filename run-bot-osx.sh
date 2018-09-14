@@ -4,6 +4,8 @@
 
 source config.sh
 
+> ${pid_file}
+
 for (( i=1; i<=$players_count; i++ ))
 do
 	echo "Run client ${i} with code ${player_codes[$i]} on ${server}"
@@ -13,6 +15,7 @@ do
 	-Dserver=${server} \
 	-jar CodeBattleJava/build/libs/battlecity-client-1.0.jar \
 	 &>/dev/null &
+	 echo "$!" >> ${pid_file}
 done
 
 

@@ -8,5 +8,6 @@ player_codes=([1]=3126263301535248716 [2]=5091398351535248716 [3]=70565334015352
 
 players_count=10
 player_registration_password_hash=202cb962ac59075b964b07152d234b70
+pid_file=pid
 
 
